@@ -1,0 +1,20 @@
+version: "3"
+services:
+    server:
+        build: .
+        environment:
+            - HOST=
+        command: python reg_server.py
+
+    client:
+        build: .
+        environment:
+            - SERVER=server
+        stdin_open: true
+        tty: true
+
+    dos:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py

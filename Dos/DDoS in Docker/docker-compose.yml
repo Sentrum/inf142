@@ -1,0 +1,134 @@
+version: "3"
+services:
+    server:
+        build: .
+        environment:
+            - HOST=
+        command: python reg_server.py
+
+    client:
+        build: .
+        environment:
+            - SERVER=server
+        stdin_open: true
+        tty: true
+
+    dos1:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos2:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos3:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos4:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos5:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos6:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos7:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos8:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos9:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos10:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos11:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos12:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos13:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos14:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos15:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos16:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos17:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos18:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos19:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py
+
+    dos20:
+        build: .
+        environment:
+            - SERVER=server
+        command: python dos.py

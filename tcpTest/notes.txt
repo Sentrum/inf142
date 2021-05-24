@@ -9,6 +9,29 @@ recv(buffsize)    - recieve data from the socket. The return value is a pair(byt
     buffsize    size of buffer
     bytes       objects representing the data recieved
     NB: "the value of buffsize should be relatively small power of 2, for eksample: 4096."
-    
 
-    
+
+Hyper threading(?)
+
+        ### selectors module ###
+
+constants 
+    EVENT_READ      Socket available for reading
+    EVENT_WRITE     Socket available for writing
+
+register(sock, events, data=None)
+    sock    socket to be registered
+    events  either EVENT_READ or EVENT_WRITE
+    data    data associated with the socket
+
+unregister(sock)  -  unregister a sock
+select(timeout=None) - dont have to wait in accept 
+    returns a list of (key, events) tuple, one for each ready socket   
+    key is an instance of SelectorKey
+close()          - close selection
+
+SelectorKey
+    fileobj     instanse of socket
+    events      either EVENT_READ or EVENT_WRITE
+    data        data associated with the socket
+
