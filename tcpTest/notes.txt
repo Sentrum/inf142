@@ -1,0 +1,14 @@
+TCP
+
+connect(address)  - connect to a remote socket at address.
+listen()          - enable a server to accept connections
+accept()          - accept a connection. the return value is a pair (conn, address) where conn is a new socket.
+send(bytes)       - Send data to the socket. Return the number of bytes sent. No need for an address, since it is tcp.
+sendall(bytes)    - send data to the socket. Unlike send, this method sends data from byttes until either all data has been sent or an error occurs
+recv(buffsize)    - recieve data from the socket. The return value is a pair(bytes,address)
+    buffsize    size of buffer
+    bytes       objects representing the data recieved
+    NB: "the value of buffsize should be relatively small power of 2, for eksample: 4096."
+    
+
+    

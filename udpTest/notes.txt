@@ -1,0 +1,24 @@
+UDP is connectionless it has no need to establish connection. (like a tcp connection)
+UDP does not offer reliable data transfer
+UDP can be used as a Lightweight protocol that wil give us speed. (low x recvfrom(x))
+
+
+
+### long way of writing  sock = socket(AF_INET, SOCK_DGRAM):
+address_family = AF_INET
+socket_type = SOCK_DGRAM
+sock = socket(address_family, socket_type)
+
+recvfrom(bufsize) - recive data from the socket. return value in a pair (bytes, address)
+    buffsize    size of the buffer
+    bytes       object representing the data recieved
+    address     in our case (host, port)
+
+sendto(bytes, address) - send data to the socket. return the number of bytes sent.
+    bytes       object representing the data to be sent.
+    address     the destination socket's address.
+
+
+
+
+
