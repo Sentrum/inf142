@@ -1,3 +1,3 @@
 # inf142
 Datanett
-author MrK
+Notes from course
